@@ -66,12 +66,6 @@ function show21(){
 		dis4.display="none";
 		dis5.display="none";
 	}
-	// else{
-	// 	dis3.display="block";
-	// 	dis1.display="block";
-	// 	dis4.display="block";
-	// 	dis5.display="block";
-	// }
 }
 
 function show31(){
@@ -81,12 +75,6 @@ function show31(){
 		dis4.display="none";
 		dis5.display="none";
 	}
-	// else{
-	// 	dis2.display="block";
-	// 	dis1.display="block";
-	// 	dis4.display="block";
-	// 	dis5.display="block";
-	// }
 }
 
 function show41(){
@@ -96,12 +84,6 @@ function show41(){
 		dis2.display="none";
 		dis5.display="none";
 	}
-	// else{
-	// 	dis3.display="block";
-	// 	dis1.display="block";
-	// 	dis2.display="block";
-	// 	dis5.display="block";
-	// }
 }
 
 function show51(){
@@ -111,10 +93,30 @@ function show51(){
 		dis4.display="none";
 		dis2.display="none";
 	}
-	// else{
-	// 	dis3.display="block";
-	// 	dis1.display="block";
-	// 	dis4.display="block";
-	// 	dis2.display="block";
-	// }
 }
+
+
+var pg1 = document.querySelector(".co_header").style;
+function toggle(){
+	if (pg1.display == "block") {
+		pg1.display="none";
+	}
+	else{
+		pg1.display ="block";
+	}
+	
+}
+
+$(".toggle-btn").click(function(){
+	$(this).toggleClass('rotate');
+})
+
+
+
+
+
+
+
+
+
+

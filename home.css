@@ -4,6 +4,8 @@ body{
 .co_header{
 	background:#000;
 	padding: 10px 0px;
+	display: none;
+	transition: all 1s ease;
 }
 .container{
 	width: 80%;
@@ -73,3 +75,38 @@ body{
 	background: #ff497c;
 	color: #fff;
 } 
+.toggle-btn {
+    width: 45px;
+    height: 41px;
+    background-color: #ff497c;
+    border: 2px solid black;
+    margin: 30px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0px auto;
+    transition: all 0.5s ease;
+}
+.rotate span{
+	background-color: #000;
+}
+.rotate .span1{
+	transform: translateY(3px) rotate(139deg);
+}
+.rotate .span2{
+	transform: translateY(-4px) rotate(44deg);
+}
+.rotate .span3{
+	display: none;
+}
